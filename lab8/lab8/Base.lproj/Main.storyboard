@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lab8" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="440" height="956"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="1vq-rd-Oue" userLabel="Background">
+                                <rect key="frame" x="-125" y="-203" width="755" height="1355"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="medium"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2c-GL-3am">
+                                <rect key="frame" x="-42" y="-17" width="582" height="1044"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="hII-8x-Mdt" userLabel="RootStack">
+                                <rect key="frame" x="16" y="130.66666666666669" width="408" height="694.66666666666652"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper esdeath _Mar_sirius" translatesAutoresizingMaskIntoConstraints="NO" id="2eK-SA-3TJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="408" height="442"/>
+                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="2eK-SA-3TJ" secondAttribute="height" multiplier="361:391" id="VIY-hJ-770"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fit-M5-gqf" userLabel="Info Stack">
+                                        <rect key="frame" x="0.0" y="491.99999999999994" width="408" height="64.333333333333314"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start listening" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T2t-tx-7W3" userLabel="title">
+                                                <rect key="frame" x="0.0" y="0.0" width="408" height="27.666666666666668"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <color key="textColor" systemColor="tableCellGroupedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="free PLAYLIST" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT7-MV-fvh" userLabel="artist">
+                                                <rect key="frame" x="0.0" y="42.666666666666742" width="408" height="21.666666666666671"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="playback" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PVB-ip-Pp0">
+                                        <rect key="frame" x="0.0" y="606.33333333333337" width="408" height="4"/>
+                                    </progressView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="E7o-HU-anL" userLabel="contro;">
+                                        <rect key="frame" x="0.0" y="660.33333333333337" width="408" height="34.333333333333371"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzK-pM-y1y" userLabel="prev">
+                                                <rect key="frame" x="0.0" y="0.0" width="56" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="backward.fill" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="previousTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jL2-5Z-wcW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qDf-yL-TpC" userLabel="play">
+                                                <rect key="frame" x="182.33333333333334" y="0.0" width="43.333333333333343" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="play.fill" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="playPauseTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bOg-vc-py1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIX-E3-xKY" userLabel="next">
+                                                <rect key="frame" x="352" y="0.0" width="56" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="forward.fill" catalog="system" title=""/>
+                                                <connections>
+                                                    <action selector="nextTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u8k-xr-FbK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hII-8x-Mdt" secondAttribute="trailing" constant="16" id="jcs-Rg-r5J"/>
+                            <constraint firstItem="hII-8x-Mdt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qPh-lv-MC3"/>
+                            <constraint firstItem="hII-8x-Mdt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="v5t-x0-hyc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="artistLabel" destination="fT7-MV-fvh" id="n29-Na-00H"/>
+                        <outlet property="coverImageView" destination="2eK-SA-3TJ" id="Ay0-Hc-GVi"/>
+                        <outlet property="playButton" destination="qDf-yL-TpC" id="mlR-sE-Fky"/>
+                        <outlet property="progressView" destination="PVB-ip-Pp0" id="few-1k-jMG"/>
+                        <outlet property="titleLabel" destination="T2t-tx-7W3" id="iGy-xo-ESb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.090909090909093" y="112.97071129707113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Image" width="782" height="1280"/>
+        <image name="Wallpaper esdeath _Mar_sirius" width="736" height="1437"/>
+        <image name="backward.fill" catalog="system" width="128" height="76"/>
+        <image name="forward.fill" catalog="system" width="128" height="76"/>
+        <image name="play.fill" catalog="system" width="120" height="128"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tableCellGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
